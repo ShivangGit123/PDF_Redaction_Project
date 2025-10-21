@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aozora - PDF Redaction</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Aozora Logo" class="logo-img">
+    <span>Aozora</span>
+  </div>
+  <ul class="nav-links">
+    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#teams">Teams</a></li>
+    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+    <li class="nav-item"><a class="nav-link trial-btn" href="#freetrial">Free Trial</a></li>
+    <li class="nav-item">
+      <a class="nav-link subscribe-btn" href="#subscribe">Subscribe</a>
+    </li>
+  </ul>
+</nav>
+
+
+<!-- Hero / Info Section -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Keep It Confidential With Online PDF Redaction</h1>
+    <p class="subtitle">Permanent Redaction in Seconds</p>
+    <p>Every day, sensitive data like Aadhaar, PAN, and phone numbers leaks from careless document sharing. These leaks can lead to identity theft, financial loss, or misuse of your personal information.</p>
+    <p>Our tool ensures that once sensitive data is removed, it is <strong>irreversibly redacted</strong>, keeping your documents safe and private.</p>
+    <img src="{{ url_for('static', filename='images/redact.png') }}" alt="Redact Icon" class="hero-img">
+    <div class="hero-animations">
+      <!-- Placeholder for animated icons/graphics -->
+      <img src="{{ url_for('static', filename='images/privacy_shield.png') }}" alt="Privacy Shield" class="hero-icon animate-bounce">
+      <img src="{{ url_for('static', filename='images/secure_data.png') }}" alt="Secure Data" class="hero-icon animate-rotate">
+    </div>
+  </div>
+</section>
+
+<!-- Features / Info Graphics Section -->
+<section class="features">
+  <h2>Why Choose Aozora?</h2>
+  <div class="feature-container">
+    <div class="feature">
+      <img src="{{ url_for('static', filename='images/secure.png') }}" alt="Secure Icon" class="feature-img animate-fade">
+      <h3>Secure & Private</h3>
+      <p>All processing happens locally or on encrypted channels. We never store your sensitive data without permission.</p>
+    </div>
+    <div class="feature">
+      <img src="{{ url_for('static', filename='images/redact.png') }}" alt="Redact Icon" class="feature-img animate-fade-delay">
+      <h3>Fast Redaction</h3>
+      <p>Automatically detect and redact Aadhaar, PAN, and Phone numbers in seconds. Save time and avoid manual errors.</p>
+    </div>
+    <div class="feature">
+      <img src="{{ url_for('static', filename='images/difference.png') }}" alt="Difference Icon" class="feature-img animate-fade-delay2">
+      <h3>Why We're Different</h3>
+      <ul>
+        <li>✅ Fully irreversible redaction.</li>
+        <li>✅ Works without installing software.</li>
+        <li>✅ Easy drag & drop interface.</li>
+        <li>✅ Designed for personal and professional use.</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <img src="{{ url_for('static', filename='images/leak.png') }}" alt="Leak Icon" class="feature-img animate-fade-delay3">
+      <h3>Understand Privacy Risks</h3>
+      <p>Documents shared via email, cloud, or messaging apps often retain hidden sensitive info. Aozora ensures these risks are mitigated before sharing.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Meet Our Team</h1>
+    <p>The minds behind Aozora - Combining skills in Backend, Frontend, and UI/UX to bring you secure PDF redaction.</p>
+  </div>
+</section>
+
+<!-- Teams Section -->
+<section class="teams" id="teams">
+  <div class="team-container">
+
+    <div class="team-card">
+      <h3>Jayant</h3>
+      <p><strong>Role:</strong> Frontend & UI/UX Developer</p>
+      <p><strong>Skills:</strong> HTML, CSS, JavaScript, UI/UX Design 🎨</p>
+      <p><strong>Fun Fact:</strong> Loves futuristic web designs and animations 🚀</p>
+      <p><strong>Contribution:</strong> Designed the interactive UI & ensured a smooth user experience.</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Shivang</h3>
+      <p><strong>Role:</strong> Backend & PDF Redaction Developer</p>
+      <p><strong>Skills:</strong> Python, Flask, Regex, PyMuPDF 🐍</p>
+      <p><strong>Fun Fact:</strong> Enjoys solving tricky regex patterns and automating tasks ⚡</p>
+      <p><strong>Contribution:</strong> Built the PDF redaction engine and integrated file upload/download features.</p>
+    </div>
+
+    <!-- Add more team members as text-only cards -->
+    <div class="team-card">
+      <h3>Team Synergy</h3>
+      <p><strong>Role:</strong> Quality Assurance & Documentation</p>
+      <p><strong>Skills:</strong> Testing, Bug Fixing, Documentation 📝</p>
+      <p><strong>Fun Fact:</strong> Loves clean code and perfect documentation ✔️</p>
+      <p><strong>Contribution:</strong> Tested the app for edge cases and ensured smooth PDF redaction workflow.</p>
+    </div>
+
+    <div class="team-card">
+      <h3>Team Strategy</h3>
+      <p><strong>Role:</strong> Project Planning & Hackathon Lead</p>
+      <p><strong>Skills:</strong> Planning, Pitching, Hackathon Strategy 🎯</p>
+      <p><strong>Fun Fact:</strong> Can pitch ideas faster than you can code 💡</p>
+      <p><strong>Contribution:</strong> Led the project planning, demo strategy, and presentation slides.</p>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
+
+
+
+<!-- Free Trial / PDF Redaction Section -->
+<section id="freetrial" class="freetrial-section">
+  <h2>Redact Your PDF</h2>
+  <p>Upload your PDF and remove sensitive data instantly (Aadhaar, PAN, Phone).</p>
+
+  <form id="pdfForm" action="/redact" method="post" enctype="multipart/form-data">
+    <!-- File Upload -->
+    <div class="upload-box">
+      <input type="file" id="pdfInput" name="pdf" accept="application/pdf" required>
+      <label for="pdfInput" id="fileLabel">Drag & drop your PDF here or click to upload</label>
+    </div>
+
+    <!-- Show selected PDF name -->
+    <p id="selectedFile"></p>
+
+    <button type="submit">Redact PDF</button>
+  </form>
+
+  <!-- Optional: show redacted PDF link -->
+  <div id="downloadLink" style="display:none;">
+    <p>Redaction complete!</p>
+    <a href="#" id="downloadPDF" target="_blank">Download Redacted PDF</a>
+  </div>
+</section>
+
+
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+  <h2>Redact PDF FAQs</h2>
+
+  <div class="faq-item">
+    <img src="{{ url_for('static', filename='images/faq.png') }}" alt="FAQ Icon" class="faq-icon">
+    <h4>Q1: Can the redacted data be recovered?</h4>
+    <p>A: No, our tool permanently removes sensitive information, making recovery impossible.</p>
+  </div>
+
+  <div class="faq-item">
+    <img src="{{ url_for('static', filename='images/faq.png') }}" alt="FAQ Icon" class="faq-icon">
+    <h4>Q2: Which file formats are supported?</h4>
+    <p>A: Currently, only PDF files are supported for redaction.</p>
+  </div>
+
+  <div class="faq-item">
+    <img src="{{ url_for('static', filename='images/faq.png') }}" alt="FAQ Icon" class="faq-icon">
+    <h4>Q3: Is my data secure?</h4>
+    <p>A: Yes, we prioritize privacy and never store your sensitive data on our servers without permission.</p>
+  </div>
+</section>
+
+<!-- Reviews Footer -->
+<section class="reviews-footer">
+  <h3>What People Say About Aozora</h3>
+
+  <div class="review-list">
+    <div class="review-item">
+      <h4>Asha Mehta</h4>
+      <div class="review-stars">★★★★★</div>
+      <p>Saved us hours of manual redaction. Reliable and fast — impressed by the irreversible redaction.</p>
+    </div>
+
+    <div class="review-item">
+      <h4>Rahul Desai</h4>
+      <div class="review-stars">★★★★☆</div>
+      <p>Great accuracy for PAN/Aadhaar detection. UI is clean and intuitive.</p>
+    </div>
+
+    <div class="review-item">
+      <h4>Priya Nair</h4>
+      <div class="review-stars">★★★★★</div>
+      <p>I use Aozora for sources before publishing — peace of mind is priceless.</p>
+    </div>
+
+    <div class="review-item">
+      <h4>Vikram Patel</h4>
+      <div class="review-stars">★★★★☆</div>
+      <p>Fast demo-ready tool for redacting resumes before sharing — saves time and risk.</p>
+    </div>
+
+    <div class="review-item">
+      <h4>Nidhi Kapoor</h4>
+      <div class="review-stars">★★★★★</div>
+      <p>Simple, transparent, and does what it claims. Recommended for small teams.</p>
+    </div>
+
+    <div class="review-item">
+      <h4>Karan Mehra</h4>
+      <div class="review-stars">★★★★☆</div>
+      <p>Works well on typical PDFs. Would love OCR support next.</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 Aozora</span>
+    
+  </div>
+</section>
+
+<!-- Contact / Feedback Section -->
+<section class="contact" id="contact">
+  <h2>Contact & Feedback</h2>
+  <div class="contact-container">
+    
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:jy8316600@gmail.com">jy8316600@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/jayant-yadav-a22b98283" target="_blank">Connect with us on LinkedIn</a>
+      </p>
+      <p>We’d love to hear your thoughts! Share your feedback or suggestions below.</p>
+    </div>
+
+    <!-- Feedback Form -->
+    <form class="feedback-form" onsubmit="showThankYou(event)">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Feedback" rows="5" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</section>
+
+<script>
+function showThankYou(event) {
+  event.preventDefault();
+  alert("Thank you for your feedback! 😊");
+  event.target.reset();
+}
+</script>
+
+
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
